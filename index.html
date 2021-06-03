@@ -1,12 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git 14</title>
+    <title>SAGE Git</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pruebacss.css">
+    <meta name="description" content="Este es el sitio web de Sage en el cual podrás hacer listas personalizadas de tu contenido favorito">
+    <meta name="keywords"  content="SERIES, PELICULAS, ANIME">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: rgb(233, 227, 227)">
+    <div class="containerMobile" id="grilla">
+        
+        <!--Menu principal-->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><a href="index.html"><img src="Imagenes/SageLogo.png" alt="ImageUno" width="100px" title="Sage Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="Random.html">Random</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="Mi Lista.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mi Lista
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Mi Lista.html">Lista General</a></a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Mi Lista.html">Mis Series</a></li>
+                        <li><a class="dropdown-item" href="Mi Lista.html">Mis Peliculas</a></li>
+                        <li><a class="dropdown-item" href="Mi Lista.html">Mis Animes</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="Mas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Mas.html">Configuracion</a></li>
+                        <li><a class="dropdown-item" href="Mas.html">Bases y Condiciones</a></li>
+                        <li><a class="dropdown-item" href="Mas.html">Beneficios del servicio</a></li>
+                        <li><a class="dropdown-item" href="Mas.html">Contacto</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+
+    <!--Secciones-->
+
+    <section id="useries" class="titulos--1">
+        <h2>Ultimas series en emisión</h2>
+        <div class="cardflexrow">
+            <div class="cardflexrow--transicion"><img src="Imagenes/Shang Chi Poster.jpg" width="350" alt="Shang Chi" title="Shang Chi"></div>
+            <div class="cardflexrow--transicion"><img src="Imagenes/Shingeki no Kyojin Poster.jpg" width="350" alt="Shingeki" title="Shingeki no Kyojin 4ta Temporada"></div>
+            <div class="cardflexrow--transicion"><img src="Imagenes/WandaVision Poster.jpg" width="350" alt="WandaVision" title="WandaVision"></div>
+        </div>
+    </section>
+
+    <section id="noticias" class="titulos--1">
+        <h2>Noticias</h2>
+        <div id="carouselNoticias" class="carousel slide" data-ride="carousel">
+                
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active blocknoticias">
+                        <div class="blocknoticias--gold">
+                        <img class="d-block w-100" src="Imagenes/Castlevania Notica.jpg" alt="Castlevania Temporada 4 Anuncio">
+                        <div class="blocknoticias__transicion">
+                            <h4>Castlevania Temporada 4</h4>
+                            <p>La serie terminará con esta cuarta temporada, pero Netflix tiene en mente publicar otras series basadas en este mismo universo.</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item blocknoticias">
+                        <div class="blocknoticias--red">
+                        <img class="d-block w-100" src="Imagenes/House Dragon Noticia.jpeg" alt="House of the Dragon Reparto">
+                        <div class="blocknoticias__transicion">
+                            <h4>Reparto de House of the Dragon</h4>
+                            <p>La serie está ambientada 300 años antes de los eventos de la popular ficción y contará la historia de la familia Targaryen.</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item blocknoticias">
+                        <div class="blocknoticias--snow">
+                        <img class="d-block w-100" src="Imagenes/REVillage Noticia.png" alt="Lanzamiento Resident Evil Village">
+                        <div class="blocknoticias__transicion">
+                            <h4>Lanzamiento de Resident Evil Village</h4>
+                            <p>Ethan Winters está de vuelta para enfrentar a Lady Dimitrescu, Madre Miranda y más pesadillas.</p>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            <a href="#carouselNoticias" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+
+            <a href="#carouselNoticias" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="tseries" class="titulos--1">
+        <h2>Top Series</h2>
+        <div class="cardflexrow">
+        <p class="section__align">
+            <div class="cardflexrow--transicion"><img src="Imagenes/Hannibal Poster.jpg" width="350" alt="Hannibal" title="Hannibal 4ta Temporada"></div>
+            <div class="cardflexrow--transicion"><img src="Imagenes/Death Note Poster.jpg" width="350"  alt="DeathNote" title="Death Note"></div>
+            <div class="cardflexrow--transicion"><img src="Imagenes/Juego de Tronos Poster.jpg" width="350" alt="Juego de Tronos" title="Juego de Tronos 2da Temporada"></div>
+        </p>
+        </div>
+    </section>
+
+    <section id="trailers" class="titulos--1">
+        <h2>Trailers</h2>
+
+        <div id="carouselTrailers" class="carousel slide section__align" data-ride="carousel">
+                
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ETY44yszyNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="carousel-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vQWyySUwMzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="carousel-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JLixtembASE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        <a href="#carouselTrailers" class="carousel-control-prev" role="button" data-slide="prev" style="color: brown;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+
+        <a href="#carouselTrailers" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+
+    </div>
+    </section>
     
+    <!--Footer-->
+    <br><br>
+    <footer>
+        <h3 class="footer__tipo" id="grad">Información de contacto</h3>
+        <div class="cardcenter">
+            <div class="cardcenter__item"><img src="Imagenes/Instagram Logo.png" alt="InstaL" width="50" title="Instagram"></div>
+            <div class="cardcenter__item"><img src="Imagenes/SageLogo.png" alt="SageLogo" width="100" title="Sage Logo"></div>
+            <div class="cardcenter__item"><img src="Imagenes/Twitter Logo.png" alt="TwitterL" width="50" title="Twitter"></div>
+        </div>
+    </footer>
+
+    <!--Script JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
